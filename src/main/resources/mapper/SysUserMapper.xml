@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.leu.dao.SysUserDao">
+    <select id="select" resultType="com.leu.domain.SysUser">
+        SELECT * from sysuser
+    </select>
+
+    <select id="selectByName" resultType="com.leu.domain.SysUser">
+        select * from sysuser where sysUserName = #{sysUserName}
+    </select>
+
+</mapper>
